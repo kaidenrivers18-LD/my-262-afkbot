@@ -7,12 +7,13 @@ http.createServer((req, res) => {
     res.end('KaiQuestAFK Drone is actively monitoring Java 26.2!\n');
 }).listen(process.env.PORT || 3000);
 
-// 2. NO-PORT CONFIGURATION - SEPARATE CLONE PROFILE
+// 2. 26.2 PROTOCOL CONFIGURATION
 const botArgs = {
-    host: 'kaiquest15.aternos.me', // Your permanent main IP address text!
-    username: 'KaiQuestAFK',       // This names the separate bot character profile
-    auth: 'offline',               // Uses cracked/offline authentication mode
-    version: '1.21.1'              // Forces stable Java 26.2 matching protocol lines
+    host: 'kaiquest15.aternos.me', 
+    username: 'KaiQuestAFK',      
+    auth: 'offline',              
+    version: '1.21.3',            // Explicitly locks into the 26.2 network layer
+    skipValidation: true          // Forces the bot past frozen handshake screens
 };
 
 function launchBot() {
