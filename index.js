@@ -7,13 +7,13 @@ http.createServer((req, res) => {
     res.end('KaiQuestAFK Drone is actively monitoring Java 26.2!\n');
 }).listen(process.env.PORT || 3000);
 
-// 2. BOT PROFILE SETTINGS - OFFLINE MODE (Leaves your account completely alone)
+// 2. BOT PROFILE SETTINGS WITH CLEAN MARMOSET ADDRESS
 const botArgs = {
-    host: 'bushpig.aternos.host', 
-    port: 40729,                  
+    host: 'marmoset.aternos.host', // Your exact clean DynIP text string!
+    port: 40729,                  // Your exact 5-digit port number!
     username: 'KaiQuestAFK',      // This names the separate bot character profile
     auth: 'offline',              // Uses cracked/offline authentication mode
-    version: '1.21.3'             // Version 26.2 uses the 1.21.3 network protocol
+    version: '1.21.3'             // Version 26.2 runs on the 1.21.3 protocol network branch
 };
 
 function launchBot() {
