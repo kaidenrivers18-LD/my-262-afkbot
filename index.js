@@ -7,13 +7,13 @@ http.createServer((req, res) => {
     res.end('KaiQuestAFK Drone is actively monitoring Java 26.2!\n');
 }).listen(process.env.PORT || 3000);
 
-// 2. 26.2 PROTOCOL CONFIGURATION
+// 2. 26.2 PROTOCOL CONFIGURATION - NO PORT AND NO COLON
 const botArgs = {
-    host: 'kaiquest15.aternos.me', 
+    host: 'squeaker.aternos.host', // Your exact clean DynIP text string!
     username: 'KaiQuestAFK',      
     auth: 'offline',              
     version: '1.21.3',            // Explicitly locks into the 26.2 network layer
-    skipValidation: true          // Forces the bot past frozen handshake screens
+    skipValidation: true          
 };
 
 function launchBot() {
